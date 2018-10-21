@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\deads\source\repos\pipesclient\pipesclient\source.cpp(27): warning C4101: szBuf: неиспользованная локальная переменная
+  PipesClient.vcxproj -> C:\Users\deads\source\repos\PipesClient\Debug\PipesClient.exe
