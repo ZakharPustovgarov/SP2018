@@ -146,6 +146,7 @@ int main(int argc, char* argv[])
 	if (diff == true)
 	{
 		double differtime = difftime(td1, td2);
+		differtime = abs(differtime);
 		printf("\ndifference in %6.0f seconds.\n", differtime);
 	}
 
