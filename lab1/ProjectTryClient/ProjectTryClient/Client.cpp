@@ -32,12 +32,12 @@ struct Metadata
 void PrintMainMenu()
 {
 	cout << "Выберите раздел:" << "\n";
-	cout << "1. Добавить файл" << "\n";
-	cout << "2. Обновить файл" << "\n";
-	cout << "3. Обновить метаданные файла" << "\n";
-	cout << "4. Открыть файл на просмотр" << "\n";
-	cout << "5. Посмотреть полный список файлов" << "\n";
-	cout << "0. Выход" << "\n";
+	cout << "1. Add file" << "\n";
+	cout << "2. Change \ update file" << "\n";
+	cout << "3. Change \ update file's metadata" << "\n";
+	cout << "4. Open file" << "\n";
+	cout << "5. View full list of files" << "\n";
+	cout << "0. Exit" << "\n";
 	cout << "> ";
 }
 
@@ -167,7 +167,7 @@ int main(int argc, char* argv[])
 						}
 						if (ch == false)
 						{
-							cout << "Error: file with this name and extension already exist.\nUse 'Обновить транзакцию' to rewrite file that already exist\n";
+							cout << "Error: file with this name and extension already exist.\nUse 'Change \ update file' to rewrite file that already exist\n";
 							ch = true;
 							*str1 = { 0 };
 							*str2 = { 0 };
@@ -270,7 +270,7 @@ int main(int argc, char* argv[])
 						}
 						if (ch == true)
 						{
-							cout << "Error: file with this name and extension was not found.\nUse 'Посмотреть полный список файлов' to get list of all files on server and try again\n";
+							cout << "Error: file with this name and extension was not found.\nUse 'View full list of files' to get list of all files on server and try again\n";
 							*str1 = { 0 };
 							*str2 = { 0 };
 							*fext = { 0 };
@@ -338,7 +338,7 @@ int main(int argc, char* argv[])
 						}
 						if (ch == true)
 						{
-							cout << "Error: file with this name and extension was not found.\nUse 'Посмотреть полный список файлов' to get list of all files on server and try again\n";
+							cout << "Error: file with this name and extension was not found.\nUse 'View full list of files' to get list of all files on server and try again\n";
 							*str1 = { 0 };
 							*str2 = { 0 };
 							*fext = { 0 };
@@ -393,7 +393,7 @@ int main(int argc, char* argv[])
 						}
 						if (ch == true)
 						{
-							cout << "Error: file with this name and extension was not found.\nUse 'Посмотреть полный список файлов' to get list of all files on server and try again\n";
+							cout << "Error: file with this name and extension was not found.\nUse 'View full list of files' to get list of all files on server and try again\n";
 							*str1 = { 0 };
 							*str2 = { 0 };
 							*fext = { 0 };
@@ -472,7 +472,7 @@ int main(int argc, char* argv[])
 			}
 			catch (char er)
 			{
-				cout << "Ошибка:" << er << "\n";
+				cout << "Error:" << er << "\n";
 			}
 			
 
